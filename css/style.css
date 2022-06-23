@@ -1,66 +1,90 @@
-.page {
-    max-width: 960px;
-    min-width: 300px;
+.project {
     margin: 0;
-  }
-  
-  html {
+    padding: 0;
+    width: 100%;
+    height: auto;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     color: #454545;
-    margin: 0px;
-    padding: 0px;
     background-color: #f8f8f8;
     text-align: center;
-  }
-  
-  header {
-    text-align: center;
-  }
-  header span {
+}
+
+header span {
     font-size: 60px;
-    font-size: 2em;
-    color: #f16059;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .ball {
-  position: relative;
-  }
-  .ball img{
-    width: 100%;
-    max-width: 40em;
-  }
-  .answer {
-    color: #222;
-    text-transform: uppercase;
-    margin: 0;
-    position: relative;
-    top: 15%;
-    left: 43%;
-    width: 11%;
-    font-size: 19px;
     font-weight: bold;
-  }
-  
-  #questionButton {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    font-size: 1.875em;
+    color: #f5ae4a;
+}
+
+.ball {
+    position: relative;
+}
+
+.ball img {
+    width: 100%;
+    max-width: 38em;
+}
+
+.shake {
+    animation: shake 1s;
+}
+
+@keyframes shake {
+    0% {transform: translate(4px, 4px) rotate(0deg);}
+    10% {transform: translate(-4px, -4px) rotate(-1deg);}
+    20% {transform: translate(-7px, 0px) rotate(1deg);}
+    30% {transform: translate(7px, 4px) rotate(0deg);}
+    40% {transform: translate(4px, -4px) rotate(1deg);}
+    50% {transform: translate(-7px, 4px) rotate(-1deg);}
+    60% {transform: translate(-7px, 4px) rotate(0deg);}
+    70% {transform: translate(7px, 4px) rotate(-1deg);}
+    80% {transform: translate(-4px, -4px) rotate(1deg);}
+    90% {transform: translate(4px, 4px) rotate(0deg);}
+    100% {transform: translate(4px, -4px) rotate(-1deg);}
+}
+
+.question-box {
+    color:#000000;
+    background-color: rgba(45, 97, 229, 0.603);
+    font-size: 20px;
+    font-style: oblique;
+    width: 80%;
+    height: 50px;
+    margin: 15px;
+    padding: 25px;
+    
+    position: relative;
+    text-align: center;
+}
+
+.answer {
+    color: rgb(45, 97, 229);
+    text-transform: uppercase;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: wavy;
+}
+
+#question {
+    font-family: "Montserrat",sans-serif;
+    font-size: 25px;
     color: #f8f8f8;
-    background-color: #e13434;
-    border-radius: 5px;
-    border: none;
-    padding: .5em 1em;
+    background-color: #f5ae4a;
+    border-radius: 20px;
+    border-color: #454545;
+    padding: 15px;
     width: 80%;
     max-width: 15em;
-    margin-top: 1em;
-  }
-  
-  footer p {
+}
+
+footer p {
     text-transform: uppercase;
     font-size: 12px;
-    font-size: .75em;
-  }
+    margin: 10px;
+}
+
+
+
