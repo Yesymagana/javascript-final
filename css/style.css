@@ -43,29 +43,30 @@ header span {
     100% {transform: translate(4px, -4px) rotate(-1deg);}
 }
 
+#message {
+    color: rgb(45, 97, 229);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    padding: 15px;  
+}
+
 .question-box {
     color:#000000;
-    background-color: rgba(45, 97, 229, 0.603);
+    background-color: rgba(194, 194, 194, 0.603);
     font-size: 20px;
     font-style: oblique;
+    font-weight: bold;
     width: 80%;
+    max-width: 35em;
     height: 50px;
     margin: 15px;
     padding: 25px;
-    
     position: relative;
     text-align: center;
-}
-
-.answer {
-    color: rgb(45, 97, 229);
-    text-transform: uppercase;
-    margin: 20px;
-    position: relative;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: wavy;
 }
 
 #question {
