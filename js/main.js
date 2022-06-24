@@ -1,10 +1,8 @@
+// Prompt for user's name
 const userName = prompt('Hi Friend, what is your name?')
 console.log(userName);
 
-const image = document.querySelector('img')
-
-image.src = 'https://www.pngitem.com/pimgs/m/531-5319393_disney-winnie-the-pooh-clip-winnie-the-pooh.png'
-
+// Alert with greeting and instructions for user
 if (userName == null || userName == '') {
   txt = 'Click on the button below to ask me anything';
 } else {
@@ -12,6 +10,13 @@ if (userName == null || userName == '') {
 }
 alert(txt);
 
+// Pooh Bear - initial image with empty pot
+const image = document.querySelector('img')
+
+image.src = 'https://www.pngitem.com/pimgs/m/531-5319393_disney-winnie-the-pooh-clip-winnie-the-pooh.png'
+
+
+// Shake function 
 function shake() {
   const pooh = document.getElementById('hunnypot')
   const messageText = document.getElementById('message')
@@ -26,6 +31,7 @@ function shake() {
   setTimeout(function(){getFortune();}, 1000);
 }
 
+// Function to retrieve Fortune
 function getFortune() {
   const fortunes = ['It is certain', 'It is decidedly so', 'Without a doubt', 'Yes, definitely', 'You may rely on it', 'As I see it, yes', 'Most likely', 'Outlook good', 'Yes', 'Signs point to yes', 'Reply hazy, try again', 'Ask again later', 'Better not tell you now', 'Cannot predict now', 'Concentrate and ask again', 'Do not count on it', 'My reply is no', 'My sources say no', 'Outlook not so good', 'Very doubtful']
 
